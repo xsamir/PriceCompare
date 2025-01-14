@@ -1,0 +1,168 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 30px;
+}
+
+.filters {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.1rem;
+    color: var(--dark-color);
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: var(--light-color);
+    border-radius: 5px;
+}
+
+.platform {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.amount {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.buy-button {
+    background: var(--success-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background: darken(var(--success-color), 10%);
+}
+
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination a {
+    padding: 8px 16px;
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.pagination a.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Admin Styles */
+.admin-container {
+    padding: 20px;
+}
+
+.admin-header {
+    background: var(--dark-color);
+    color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.admin-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.admin-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.admin-card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-danger {
+    background: var(--danger-color);
+    color: white;
+}
